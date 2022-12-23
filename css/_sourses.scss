@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Основные цвета
+$BlackColor:#1B1B1B;
+$DarkGreen:#043E44;
+$Turquoise:#2C595D;
+$MoonGray:#7B7B7B;
+$Gray:#B1B1B1;
+$NotActive:#C9C9C9;
+$Green:#209041;
+$GreenHover:#2AAD51;
+$L–Gray:#F7F7F7;
+$Error:#DC3A3A;
+$Orange:#ED6B06;
+$Yellow:#F9CE1E;
+$LightBeige:#FAF1EA;
+$LightBlue:#E0F2FF;
+$LightYellow:#FEE9A6;
+$LightRed:#FFEBEA;
+$LightGreen:#EBF5D2;
+$SoftBlue:#E0F9FF;
+$LightBrown:#FEECE0;
+$LightGreenSecond:#D2ECDA;
+$LightOrange:#FFF0D3;
+$LightPurple:#EAE1FF;
+
+//Типография
+.Medium-32 {
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.Medium-28 {
+    font-weight: 500;
+    font-size: 28px;
+}
+
+.Medium-24 {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.Medium-16 {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.Medium-14 {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+
+.Light-24 {
+    font-weight: 300;
+    font-size: 24px;
+}
+
+.Light-14 {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.Light-12 {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+
+.Regular-24 {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.Regular-20 {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.Regular16 {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.Regular14 {
+    font-weight: 400;
+    font-size: 14px;
+}

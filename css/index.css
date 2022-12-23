@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Medium-32 {
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.Medium-28 {
+  font-weight: 500;
+  font-size: 28px;
+}
+
+.Medium-24 {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.Medium-16 {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.Medium-14 {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.Light-24 {
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.Light-14 {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.Light-12 {
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.Regular-24 {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.Regular-20 {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.Regular16 {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.Regular14 {
+  font-weight: 400;
+  font-size: 14px;
+}/*# sourceMappingURL=index.css.map */
