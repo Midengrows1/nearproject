@@ -2,19 +2,205 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.2/dist/iconify-icon.min.js"></script>
-    <link rel="stylesheet" href="./css/index.css">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project</title>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.2/dist/iconify-icon.min.js"></script>
+  <link rel="stylesheet" href="./css/index.css" />
 </head>
 
 <body>
-    <div class="wrapper">
+  <div class="wrapper">
+    <div class="wrapper__content">
+      <header class="header">
+        <div class="header__top">
+          <div class="header__top-left">
+            <div class="header-logo">
+              <img src="./assets/img/Лого.svg" alt="logo" />
+            </div>
+            <div class="header-delivery">
+              <div class="switch">
+                <input type="checkbox" />
+              </div>
+              <iconify-icon icon="bi:lightning-charge-fill" class="thunder"></iconify-icon>
+              <p>Доставим за 15 минут</p>
+              <iconify-icon icon="mdi:question-mark-circle-outline" class="question"></iconify-icon>
+            </div>
+          </div>
+          <div class="header__top-right">
+            <span>Акции</span>
+            <span>График доставки</span>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="header__bottom-left">
+            <img src="./assets/img/Menu 2.svg" alt="menu" />
+            <span>Каталог продуктов</span>
+            <div class="search">
+              <input type="text" placeholder="Поиск по товарам, рецептам и статьям" />
+              <img src="./assets/img/Поиск.svg" alt="search" />
+            </div>
+            <div class="location-delivery">
+              <img src="./assets/img/Union.svg" alt="lcation-spot" />
+              <input type="text" placeholder="Куда доставить?" />
+            </div>
+          </div>
+          <div class="header__bottom-right">
+            <img src="./assets/img/avatar.svg" alt="" />
+            <img src="./assets/img/Cart.svg" alt="" />
+            <p>2800 ₽</p>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="first__screen">
+          <div class="first__screen-sorting">
+            <button class="swipe-left default-btn">
+              <iconify-icon icon="material-symbols:arrow-back-ios-new-rounded"></iconify-icon>
+            </button>
+            <nav class="sorting-products">
+              <ul>
+                <li>Молоко</li>
+                <li>Хлеб</li>
+                <li>Мясо и Птица</li>
+                <li>Сыр</li>
+                <li>Сыр</li>
+                <li>Овощи</li>
+                <li>Масло</li>
+                <li>Картофель</li>
+                <li>Яйца</li>
+                <li>Сладости</li>
+                <li>Творог</li>
+                <li>Кефир</li>
+                <li>Вода</li>
+                <li>Название пункта</li>
+              </ul>
+            </nav>
+            <button class="swipe-right default-btn">
+              <iconify-icon icon="material-symbols:arrow-forward-ios-rounded"></iconify-icon>
+            </button>
+          </div>
+          <div class="first__screen-content">
 
+          </div>
+        </section>
+        <section class="second__screen">
+          <div class="second__screen-title">
+            <h2 class="Medium-28">Популярные товары</h2>
+            <div class="swiperit">
+              <span>Смотреть все</span>
+              <div class="nav-btns">
+                <button>
+                  <iconify-icon icon="ph:arrow-right-light" rotate="180deg" class="arrow"></iconify-icon>
+                </button>
+                <button>
+                  <iconify-icon icon="ph:arrow-right-duotone" class="arrow"></iconify-icon>
+                </button>
+              </div>
+
+            </div>
+          </div>
+          <div class="second__screen-goods-slider">
+            <div class="slider-item">
+              <div class="slider-back">
+                <img src="./assets/img/product-placement.png" alt="">
+              </div>
+              <div class="slider-description">
+                <div class="description-title">
+                  <span class="Light-12"><img src="./assets/img/plant.svg" alt="">Органик</span>
+                  <div class="description-info">
+                    <span><iconify-icon icon="bxs:message" flip="horizontal" class="comment"></iconify-icon>124</span>
+                    <span><iconify-icon icon="ic:round-star-rate" flip="horizontal" class="star"></iconify-icon> 4.77</span>
+                  </div>
+                </div>
+                <h3 class="Medium-16">Молоко 3,2%</h3>
+                <p>От Вадима Рошки</p>
+                <p>500 гр</p>
+                  <div class="product-price">
+                    <h2 class="Regular-20">95 ₽</h2>
+                    <div class="cart-image">
+                      <img src="./assets/img/Cart.svg" alt="">
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="slider-back">
+                <img src="./assets/img/bread.png" alt="">
+              </div>
+              <div class="slider-description">
+                <div class="description-title">
+                  <span class="Light-12"><img src="./assets/img/Repa.svg" alt="">Создано «Рядом»</span>
+                  <div class="description-info">
+                    <span><iconify-icon icon="bxs:message" flip="horizontal"></iconify-icon>124</span>
+                    <span><iconify-icon icon="ic:round-star-rate" flip="horizontal" class="star"></iconify-icon> 4.77</span>
+                  </div>
+                </div>
+                <h3 class="Medium-16">Хлеб пшеничный</h3>
+      
+                <p>500 гр</p>
+                  <div class="product-price">
+                    <h2 class="Regular-20" >95 ₽</h2>
+                    <div class="cart-image">
+                      <img src="./assets/img/Cart.svg" alt="">
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="slider-back">
+                <img src="./assets/img/eggs.png" alt="">
+              </div>
+              <div class="slider-description">
+                <div class="description-title">
+                  <span class="Light-12" ><img src="./assets/img/farmer.svg" alt="">Фермер</span>
+                  <div class="description-info">
+                    <span><iconify-icon icon="bxs:message" flip="horizontal"></iconify-icon>124</span>
+                    <span><iconify-icon icon="ic:round-star-rate" flip="horizontal" class="star"></iconify-icon> 4.77</span>
+                  </div>
+                </div>
+                <h3 class="Medium-16">Яйца куриные</h3>
+                <p>От Евгения Рошаль</p>
+                <p>500 гр</p>
+                  <div class="product-price">
+                    <h2 class="Regular-20" >120 ₽</h2>
+                    <div class="cart-image">
+                      <img src="./assets/img/Cart.svg" alt="">
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="slider-back">
+                <img src="./assets/img/butter.png" alt="">
+              </div>
+              <div class="slider-description">
+                <div class="description-title">
+                  <span class="Light-12"><iconify-icon icon="bi:lightning-charge-fill" class="thunder"></iconify-icon>
+                    Доставим за 15 минут</span>
+                  <div class="description-info">
+                    <span><iconify-icon icon="bxs:message" flip="horizontal"></iconify-icon>124</span>
+                    <span><iconify-icon icon="ic:round-star-rate" flip="horizontal" class="star"></iconify-icon> 4.77</span>
+                  </div>
+                </div>
+                <h3 class="Medium-16" >Масло сливочное 82%</h3>
+                <p>От Вадима Рошки</p>
+                <p>500 гр</p>
+                  <div class="product-price">
+                    <h2 class="Regular-20" >290 ₽</h2>
+                    <div class="cart-image">
+                      <img src="./assets/img/Cart.svg" alt="">
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </section>
     </div>
+    </main>
+  </div>
 </body>
 
 </html>
