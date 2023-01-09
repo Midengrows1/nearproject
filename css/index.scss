@@ -73,6 +73,10 @@ input:checked[type="checkbox"]::before {
   color: $Yellow;
 }
 
+.arrow-down {
+  font-size: 30px;
+}
+
 .header {
   width: 100%;
   height: 120px;
@@ -262,6 +266,11 @@ input:checked[type="checkbox"]::before {
   }
 }
 
+.universal-item-slider {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
 
 .nav-btns {
   display: flex;
@@ -351,6 +360,26 @@ input:checked[type="checkbox"]::before {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  h2 {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+    span {
+      font-size: 13px;
+      position: relative;
+    }
+  }
+
+}
+
+.cross {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: red;
+  transform: rotate(160deg);
 }
 
 .cart-image {
@@ -363,6 +392,8 @@ input:checked[type="checkbox"]::before {
   background-color: $Green;
   right: 0;
   z-index: 999;
+  outline: none;
+  border: none;
 }
 
 .cart-image img {
@@ -382,40 +413,57 @@ input:checked[type="checkbox"]::before {
 }
 
 .fourth__screen {
-  &__top {
+  &__bottom {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    gap: 90px;
   }
+}
 
-  &__bottom {}
+.universal-slider {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 .recepies-item {
   display: flex;
 
 }
-.recepies-back{
+
+.recepies-back {
   width: 164px;
   height: 100%;
+  object-fit: contain;
+  overflow: hidden;
+  border-radius: 5px
 }
-.recepies-back img{
+
+.recepies-back img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 
 }
+
 .recepies-info {
+  display: flex;
   height: 100%;
+  padding: 15px 20px;
+  gap: 40px;
 }
 
 .recepies-left {
-  padding:15px 20px;
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 15px;
+
+  .recepies-title {
+    background: $Turquoise;
+  }
+
   span {
     width: max-content;
     background: $Orange;
@@ -423,21 +471,238 @@ input:checked[type="checkbox"]::before {
     border-radius: 25px;
     color: #fff;
   }
-  p{
+
+  p {
     opacity: .5;
   }
 
-} 
-.ingridient-cart{
-  display: flex;
-  align-items:center;
-  gap: 20px;
-  background:$Green;
-  padding: 15px;
-  color:#fff;
-  border-radius:10px;
-  margin-top: 2em;
 }
-a{
+
+.ingridient-cart {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: $Green;
+  padding: 15px;
+  color: #fff;
+  border-radius: 10px;
+  margin-top: 2em;
+  width: max-content;
+}
+
+a {
   text-decoration: none;
+}
+
+.recepies-right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+
+.ingridients-item {
+  width: 48px;
+  height: 48px;
+  flex: none;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  mix-blend-mode: screen;
+
+}
+
+.recepies-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  flex: none;
+  mix-blend-mode: screen;
+}
+
+.top-description {
+  margin-bottom: 40px;
+}
+
+.eight___screen__features {
+  display: flex;
+  gap: 25px;
+
+}
+
+.eight__screen__left,
+.eight__screen__right {
+  width: 50%;
+  padding: 20px;
+  background: url(/assets/img/fresh_vegetables_and_fruits_arranged_in_curved_shaped_on_white_backdrop.png) no-repeat right 80%;
+  background-color: $L–Gray;
+
+}
+
+.eight__screen__left__description {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+}
+
+.eight__screen__left__school {
+
+  ul {
+    display: flex;
+    gap: 15px;
+    list-style-position: inside;
+    list-style: none;
+    opacity: .4;
+    font-size: 14px;
+
+    .list-circle::before {
+      content: '';
+      list-style-type: disc;
+      display: list-item;
+      float: left;
+      width: 1px;
+      text-align: center;
+      margin: 0 -15px 0 8px;
+    }
+
+
+  }
+}
+
+.eight__screen__right {
+  background: url(/assets/img/unsplash_yl2d0CKW130.png) no-repeat right;
+}
+
+.eight__screen__right__description {
+  max-width: 50%;
+  align-self: flex-end;
+  line-height: 25px;
+}
+
+.ninth__screen {}
+
+.ninth__screen__questions {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.ninth__screen__item {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 32px;
+  background: $L–Gray;
+}
+
+.ninth__screen__top-question {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.active-question-title {
+  margin-bottom: 15px;
+
+  p {
+    color: $Green;
+  }
+}
+
+.active-qustion__description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.gray-down {
+  opacity: .4;
+}
+
+
+
+.ten__screen__delivers-container {
+  display: flex;
+  gap: 25px;
+  justify-content: space-between;
+}
+
+.ten__screen__delivers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+  position: relative;
+}
+
+.ten__screen__deliver__inner {
+  position: absolute;
+  background: gray;
+  width: 100%;
+  height: 80%;
+  opacity: .1;
+  z-index: -1;
+  bottom: 0;
+
+}
+
+.ten__screen__avatar {}
+
+.ten__screen__name {
+  text-align: center;
+  line-height: 30px;
+}
+
+.ten__screen__dishes {
+  display: flex;
+  gap: 14px;
+}
+
+.final__about {
+  display: flex;
+  padding:44px 20px 0px 0px ;
+  height: 18em;
+  gap: 20px;
+  background-color:$L–Gray;
+}
+
+.final__about__left {
+  align-self: flex-end
+}
+
+.final__about__right {}
+
+.final__description__top {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+  align-items: center;
+
+  a {
+    display: inline-block;
+    color: #000;
+  }
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+.final__description__top>p {
+  padding: 7px 16px;
+  background-color: $DarkGreen;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.final__description__bottom {
+  line-height: 25px;
 }
